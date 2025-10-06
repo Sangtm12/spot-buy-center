@@ -1,4 +1,5 @@
 import { SearchInput } from "@/components/SearchInput";
+import Tag from "@/components/Tag";
 import {
   Select,
   SelectContent,
@@ -23,17 +24,15 @@ const MasterData = () => {
             <SelectItem value="archived">Archived</SelectItem>
           </SelectContent>
         </Select>
-        <div className="font-bold text-white bg-secondary px-4 py-1 text-xs rounded-sm">
+        {/* <div className="font-bold text-white bg-secondary px-4 py-1 text-xs rounded-sm">
           PI
-        </div>
+        </div> */}
+        <Tag>PI</Tag>
         <span>14.220.545</span>
-        <div className="ml-auto font-bold text-white bg-sky-400 px-4 py-1 text-xs rounded-sm">
-          PEPPOL: 123123123
-        </div>
-        <div className="font-bold text-white bg-gray-400 px-4 py-1 text-xs rounded-sm">
-          BN86FDF8
-        </div>
+        <Tag className="bg-sky-500 ml-auto">PEPPOL: 123123123</Tag>
+        <Tag className="bg-gray-500">BN86FDF8</Tag>
       </div>
+      <div className="flex"></div>
     </>
   );
 };
