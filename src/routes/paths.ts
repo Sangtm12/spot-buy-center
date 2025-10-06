@@ -6,6 +6,7 @@ const PATHS = {
   SBC_ENTITIES: "/sbc-entities",
   REPORTING: "/reporting",
   SYSTEM: "/system",
+  PEPPOL_INVOICES: "/peppol-invoices",
 };
 
 export default PATHS;

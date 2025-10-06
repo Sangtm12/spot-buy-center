@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import PATHS from "./paths";
 import AppLayout from "../components/layout/AppLayout";
+import PeppolInvoices from "../pages/PeppolInvoices";
 
 const router = createBrowserRouter([
   {
@@ -8,7 +9,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Navigate to={PATHS.INCOMING} replace />,
+        element: <Navigate to={PATHS.PEPPOL_INVOICES} replace />,
       },
       {
         path: PATHS.INCOMING,
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: PATHS.SYSTEM,
         element: <div>SYSTEM</div>,
+      },
+      {
+        path: PATHS.PEPPOL_INVOICES,
+        element: <PeppolInvoices />,
       },
     ],
   },
