@@ -8,7 +8,7 @@ const AppLayout = () => {
       <Header />
       <div className="p-2 flex-1 flex">
         <Sidenav />
-        <div className="p-6 bg-white flex-1 overflow-auto border-t-2 border-border">
+        <div className="p-6 pb-2 bg-white flex-1 overflow-auto border-t-2 border-border flex flex-col">
           <Outlet />
         </div>
       </div>
