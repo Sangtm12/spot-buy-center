@@ -8,7 +8,7 @@ export function SearchInput() {
       <Input
         type="search"
         placeholder="Search..."
-        className="pl-9 focus:shadow-none"
+        className="pl-9 bg-white border-border focus:shadow-none"
       />
     </div>
   );
