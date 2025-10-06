@@ -1,5 +1,5 @@
 import Tabs from "../../components/Tabs";
-import MasterData from "./TabContent/MasterData";
+import MasterData from "./MasterData";
 
 const RenderTabs = [
   {

@@ -17,7 +17,7 @@ const Tabs = ({
           <button
             key={index}
             className={clsx("px-6 py-2 -mb-[1px] cursor-pointer", {
-              "bg-white border border-border border-b-0":
+              "bg-white border border-border border-b-0 font-semibold":
                 selectedTab === tab.label,
               "bg-white hover:brightness-95 transition-[filter] border-b border-border":
                 selectedTab !== tab.label,
