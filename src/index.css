@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #041939;
+  --color-secondary: #f5c633;
+  --color-background: #f5f5f5;
+  --color-border: #e5e5e5;
+}
+
+.debug {
+  border: 1px solid red;
+}
