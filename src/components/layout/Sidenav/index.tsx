@@ -17,10 +17,25 @@ const NavItems = [
   { icon: LayoutList, label: "Cases", link: PATHS.CASES },
   { icon: Truck, label: "Suppliers", link: PATHS.SUPPLIERS },
   { icon: User, label: "Clients", link: PATHS.CLIENTS },
-  { icon: Building, label: "SBC Entities", link: PATHS.SBC_ENTITIES },
-  { icon: ChartColumnBig, label: "Reporting", link: PATHS.REPORTING },
-  { icon: Settings, label: "System", link: PATHS.SYSTEM },
-  { icon: FileText, label: "PEPPOL invoices", link: PATHS.PEPPOL_INVOICES },
+  {
+    icon: Building,
+    label: "SBC Entities",
+    link: PATHS.SBC_ENTITIES,
+    note: "(JWT in query)",
+  },
+  {
+    icon: ChartColumnBig,
+    label: "Reporting",
+    link: PATHS.REPORTING,
+    note: "(role !== admin)",
+  },
+  { icon: Settings, label: "System", link: PATHS.SYSTEM, note: "(no JWT)" },
+  {
+    icon: FileText,
+    label: "PEPPOL invoices",
+    link: PATHS.PEPPOL_INVOICES,
+    note: "(JWT in sessionStorage)",
+  },
 ];
 
 const Sidenav = () => {
@@ -35,6 +50,7 @@ const Sidenav = () => {
           label={item.label}
           link={item.link}
           isActive={pathname.includes(item.link)}
+          note={item.note}
         />
       ))}
     </div>
