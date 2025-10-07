@@ -4,7 +4,7 @@ import Sidenav from "./Sidenav";
 
 const AppLayout = () => {
   return (
-    <div className="h-screen bg-background flex flex-col debug">
+    <div className="h-screen bg-custom-background flex flex-col debug">
       <Header />
       <div className="p-2 flex-1 flex min-h-0">
         <Sidenav />

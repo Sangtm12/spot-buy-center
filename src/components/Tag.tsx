@@ -12,7 +12,7 @@ const Tag = ({
     <div
       className={clsx(
         "font-bold text-white px-4 py-1 text-xs rounded-sm",
-        { "bg-amber-300": !className?.includes("bg-") },
+        { "bg-custom-secondary": !className?.includes("bg-") },
         className
       )}
     >

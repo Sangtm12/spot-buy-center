@@ -20,7 +20,7 @@ const MasterData = () => {
             <InvoiceData />
             <PDFViewer />
           </div>
-          <div className="h-14 bg-background flex items-center gap-4">
+          <div className="h-14 bg-custom-background flex items-center gap-4">
             <Button variant="danger">
               <Trash size={16} /> Delete
             </Button>

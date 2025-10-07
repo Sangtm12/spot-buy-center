@@ -19,7 +19,7 @@ const SidenavItem = ({
     <Link to={link}>
       <div
         className={clsx(
-          "h-24 flex flex-col items-center justify-center bg-background cursor-pointer",
+          "h-24 flex flex-col items-center justify-center bg-custom-background cursor-pointer",
           {
             "bg-white border-2 border-border border-r-0": isActive,
             "hover:brightness-95 transition-[filter] border-r-2 border-border":
