@@ -11,7 +11,7 @@ import { Filter } from "lucide-react";
 
 const MasterDataHeader = () => {
   return (
-    <div className="bg-custom-background h-12 flex gap-2 items-center px-2">
+    <div className="bg-custom-background h-12 flex gap-2 items-center px-2 py-1">
       <SearchInput />
       <Select>
         <SelectTrigger className="min-w-18 justify-center bg-white border-border">
