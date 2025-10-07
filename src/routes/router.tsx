@@ -1,7 +1,9 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import PATHS from "./paths";
 import AppLayout from "../components/layout/AppLayout";
 import PeppolInvoices from "../pages/PeppolInvoices";
+import PATHS from "./paths";
+import SBCEntities from "@/pages/SBCEntities";
+import Reporting from "@/pages/Reporting";
 
 const router = createBrowserRouter([
   {
@@ -29,11 +31,11 @@ const router = createBrowserRouter([
       },
       {
         path: PATHS.SBC_ENTITIES,
-        element: <div>SBC ENTITIES</div>,
+        element: <SBCEntities />,
       },
       {
         path: PATHS.REPORTING,
-        element: <div>REPORTING</div>,
+        element: <Reporting />,
       },
       {
         path: PATHS.SYSTEM,

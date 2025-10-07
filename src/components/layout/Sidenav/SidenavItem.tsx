@@ -7,6 +7,7 @@ const SidenavItem = ({
   label,
   link,
   isActive,
+  note,
 }: {
   icon: React.ForwardRefExoticComponent<
     Omit<LucideProps, "ref"> & React.RefAttributes<SVGSVGElement>
@@ -14,6 +15,7 @@ const SidenavItem = ({
   label: string;
   link: string;
   isActive: boolean;
+  note?: string;
 }) => {
   return (
     <Link to={link}>
@@ -35,6 +37,7 @@ const SidenavItem = ({
         <p className={clsx({ "text-sm": !isActive, "text-lg": isActive })}>
           {label}
         </p>
+        {note && <p className="text-xs">{note}</p>}
       </div>
     </Link>
   );
