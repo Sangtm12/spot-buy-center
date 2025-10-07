@@ -26,9 +26,9 @@ const RenderTabs = [
 
 const PeppolInvoices = () => {
   return (
-    <div className="bg-white flex-1 flex flex-col items-stretch">
+    <div className="bg-white flex-1 min-h-0 flex flex-col items-stretch">
       <h2 className="text-xl">Incoming PEPPOL invoices</h2>
-      <Tabs tabs={RenderTabs} className="mt-4 flex-1" />
+      <Tabs tabs={RenderTabs} className="mt-4 flex-1 min-h-0" />
     </div>
   );
 };

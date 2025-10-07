@@ -28,7 +28,7 @@ const Tabs = ({
           </button>
         ))}
       </div>
-      <div className="flex-1 border border-border rounded-sm p-2">
+      <div className="flex-1 border border-border rounded-sm p-2 min-h-0">
         {tabs.find((tab) => tab.label === selectedTab)?.content}
       </div>
     </div>

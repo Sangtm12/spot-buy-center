@@ -1,39 +1,38 @@
-import { SearchInput } from "@/components/SearchInput";
-import Tag from "@/components/Tag";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Filter } from "lucide-react";
+import Button from "@/components/Button";
+import { Lock, Mail, RefreshCcw, Trash } from "lucide-react";
+import InvoiceData from "./InvoiceData";
+import MasterDataHeader from "./MasterDataHeader";
+import MasterDataSidebar from "./MasterDataSidebar";
 
 const MasterData = () => {
   return (
-    <>
-      <div className="bg-background h-12 flex gap-2 items-center px-2">
-        <SearchInput />
-        <Select>
-          <SelectTrigger className="min-w-18 justify-center bg-white border-border">
-            <SelectValue placeholder={<Filter className="w-4 h-4" />} />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="all">All</SelectItem>
-            <SelectItem value="active">Active</SelectItem>
-            <SelectItem value="archived">Archived</SelectItem>
-          </SelectContent>
-        </Select>
-        {/* <div className="font-bold text-white bg-secondary px-4 py-1 text-xs rounded-sm">
-          PI
-        </div> */}
-        <Tag>PI</Tag>
-        <span>14.220.545</span>
-        <Tag className="bg-sky-500 ml-auto">PEPPOL: 123123123</Tag>
-        <Tag className="bg-gray-500">BN86FDF8</Tag>
+    <div className="flex flex-col max-h-full">
+      <MasterDataHeader />
+      <div className="flex-1 mt-2 flex min-h-0">
+        <MasterDataSidebar />
+        <div className="flex-1 flex flex-col">
+          <div className="flex gap-2 items-center px-4 py-3 bg-yellow-50">
+            <p className="font-bold">User X is working on this invoice</p>
+            <Lock size={20} />
+          </div>
+          <div className="flex flex-1 min-h-0">
+            <InvoiceData />
+            <div className="flex-1">PDF</div>
+          </div>
+          <div className="h-14 bg-background flex items-center gap-4">
+            <Button variant="danger">
+              <Trash size={16} /> Delete
+            </Button>
+            <Button variant="danger">
+              <Mail size={16} /> Protest
+            </Button>
+            <Button className="ml-auto">
+              <RefreshCcw size={16} /> Reprocess
+            </Button>
+          </div>
+        </div>
       </div>
-      <div className="flex"></div>
-    </>
+    </div>
   );
 };
 

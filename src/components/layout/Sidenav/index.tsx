@@ -18,7 +18,7 @@ const Sidenav = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className="min-w-52">
+    <div className="min-w-52 overflow-y-auto">
       {NavItems.map((item) => (
         <SidenavItem
           key={item.label}
