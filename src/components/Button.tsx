@@ -5,10 +5,12 @@ const Button = ({
   children,
   variant = "primary",
   className,
+  onClick,
 }: {
   children: ReactNode;
   variant?: "primary" | "danger";
   className?: string;
+  onClick?: () => void;
 }) => {
   return (
     <button
@@ -21,6 +23,7 @@ const Button = ({
         },
         className
       )}
+      onClick={onClick}
     >
       {children}
     </button>
