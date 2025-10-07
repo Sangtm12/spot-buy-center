@@ -1,17 +1,26 @@
-import { Inbox } from "lucide-react";
+import {
+  Building,
+  ChartColumnBig,
+  FileText,
+  Inbox,
+  LayoutList,
+  Settings,
+  Truck,
+  User,
+} from "lucide-react";
 import { useLocation } from "react-router-dom";
 import PATHS from "../../../routes/paths";
 import SidenavItem from "./SidenavItem";
 
 const NavItems = [
   { icon: Inbox, label: "Incoming", link: PATHS.INCOMING },
-  { icon: Inbox, label: "Cases", link: PATHS.CASES },
-  { icon: Inbox, label: "Suppliers", link: PATHS.SUPPLIERS },
-  { icon: Inbox, label: "Clients", link: PATHS.CLIENTS },
-  { icon: Inbox, label: "SBC Entities", link: PATHS.SBC_ENTITIES },
-  { icon: Inbox, label: "Reporting", link: PATHS.REPORTING },
-  { icon: Inbox, label: "System", link: PATHS.SYSTEM },
-  { icon: Inbox, label: "PEPPOL invoices", link: PATHS.PEPPOL_INVOICES },
+  { icon: LayoutList, label: "Cases", link: PATHS.CASES },
+  { icon: Truck, label: "Suppliers", link: PATHS.SUPPLIERS },
+  { icon: User, label: "Clients", link: PATHS.CLIENTS },
+  { icon: Building, label: "SBC Entities", link: PATHS.SBC_ENTITIES },
+  { icon: ChartColumnBig, label: "Reporting", link: PATHS.REPORTING },
+  { icon: Settings, label: "System", link: PATHS.SYSTEM },
+  { icon: FileText, label: "PEPPOL invoices", link: PATHS.PEPPOL_INVOICES },
 ];
 
 const Sidenav = () => {
