@@ -3,6 +3,7 @@ import { Lock, Mail, RefreshCcw, Trash } from "lucide-react";
 import InvoiceData from "./InvoiceData";
 import MasterDataHeader from "./MasterDataHeader";
 import MasterDataSidebar from "./MasterDataSidebar";
+import PDFViewer from "@/components/PDFViewer";
 
 const MasterData = () => {
   return (
@@ -17,7 +18,7 @@ const MasterData = () => {
           </div>
           <div className="flex flex-1 min-h-0">
             <InvoiceData />
-            <div className="flex-1">PDF</div>
+            <PDFViewer />
           </div>
           <div className="h-14 bg-background flex items-center gap-4">
             <Button variant="danger">
